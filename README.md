@@ -147,7 +147,16 @@ fetch('users.json').then((users: Object[]) => {
 
 Now you can use `users[0].getName()` and `users[0].isAdult()` methods.
 
+## Build [⬆](#table-of-contents)
+    docker-composer up 
+    docker-composer exec app sh
+    npm ci --ignore-scripts
+    npm run build:es2015 && npm run build:esm5 && npm run build:cjs && npm run build:umd && npm run build:types
+
 ## Installation[⬆](#table-of-contents)
+
+### From github
+    `npm install git+https://github.com/ruby232/class-transformer.git#develop --save`
 
 ### Node.js[⬆](#table-of-contents)
 
