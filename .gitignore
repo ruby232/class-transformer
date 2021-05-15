@@ -42,7 +42,7 @@ $RECYCLE.BIN/
 
 # Compilation output folders
 dist/
-build/
+#build/
 tmp/
 out-tsc/
 temp
