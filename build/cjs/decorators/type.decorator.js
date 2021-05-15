@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Type = void 0;
+require("reflect-metadata");
 const storage_1 = require("../storage");
 /**
  * Specifies a type of the property.

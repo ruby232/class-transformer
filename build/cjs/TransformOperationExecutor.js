@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TransformOperationExecutor = void 0;
+require("reflect-metadata");
 const storage_1 = require("./storage");
 const enums_1 = require("./enums");
 const utils_1 = require("./utils");

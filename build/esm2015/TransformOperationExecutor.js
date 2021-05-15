@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import { defaultMetadataStorage } from './storage';
 import { TransformationType } from './enums';
 import { getGlobal, isPromise } from './utils';

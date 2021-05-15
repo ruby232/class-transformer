@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import { defaultMetadataStorage } from '../storage';
 /**
  * Specifies a type of the property.
