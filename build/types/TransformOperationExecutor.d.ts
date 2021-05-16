@@ -1,4 +1,3 @@
-import 'reflect-metadata';
 import { ClassTransformOptions, TypeMetadata } from './interfaces';
 import { TransformationType } from './enums';
 export declare class TransformOperationExecutor {

@@ -1,7 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TransformOperationExecutor = void 0;
-require("reflect-metadata");
+const reflect_metadata_1 = __importDefault(require("reflect-metadata"));
+const Reflect = reflect_metadata_1.default.Reflect;
 const storage_1 = require("./storage");
 const enums_1 = require("./enums");
 const utils_1 = require("./utils");

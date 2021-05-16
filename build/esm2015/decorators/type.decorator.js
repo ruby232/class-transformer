@@ -1,4 +1,5 @@
-import 'reflect-metadata';
+import _Reflect from 'reflect-metadata';
+const Reflect = _Reflect.Reflect;
 import { defaultMetadataStorage } from '../storage';
 /**
  * Specifies a type of the property.

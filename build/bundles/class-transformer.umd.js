@@ -6,22 +6,14 @@
 
 	var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
-	/*! *****************************************************************************
-	Copyright (C) Microsoft. All rights reserved.
-	Licensed under the Apache License, Version 2.0 (the "License"); you may not use
-	this file except in compliance with the License. You may obtain a copy of the
-	License at http://www.apache.org/licenses/LICENSE-2.0
+	function getDefaultExportFromCjs (x) {
+		return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
+	}
 
-	THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-	KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
-	WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
-	MERCHANTABLITY OR NON-INFRINGEMENT.
+	var _Reflect$1 = {};
 
-	See the Apache Version 2.0 License for specific language governing permissions
-	and limitations under the License.
-	***************************************************************************** */
-
-	var Reflect$1;
+	(function (exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
 	(function (Reflect) {
 	    // Metadata Proposal
 	    // https://rbuckton.github.io/reflect-metadata/
@@ -1137,7 +1129,11 @@
 	            return obj;
 	        }
 	    });
-	})(Reflect$1 || (Reflect$1 = {}));
+	})(exports.Reflect || (exports.Reflect = {}));
+	//# sourceMappingURL=Reflect.js.map
+	}(_Reflect$1));
+
+	var _Reflect = /*@__PURE__*/getDefaultExportFromCjs(_Reflect$1);
 
 	exports.TransformationType = void 0;
 	(function (TransformationType) {
@@ -1399,6 +1395,7 @@
 	        to[j] = from[i];
 	    return to;
 	};
+	var Reflect$1 = _Reflect.Reflect;
 	function instantiateArrayType(arrayType) {
 	    var array = new arrayType();
 	    if (!(array instanceof Set) && !('push' in array)) {
@@ -1640,7 +1637,7 @@
 	                        this_1.transformationType === exports.TransformationType.PLAIN_TO_CLASS) {
 	                        // if we have no registererd type via the @Type() decorator then we check if we have any
 	                        // type declarations in reflect-metadata (type declaration is emited only if some decorator is added to the property.)
-	                        var reflectedType = Reflect.getMetadata('design:type', targetType.prototype, propertyName);
+	                        var reflectedType = Reflect$1.getMetadata('design:type', targetType.prototype, propertyName);
 	                        if (reflectedType) {
 	                            type = reflectedType;
 	                        }
@@ -2085,6 +2082,7 @@
 	    };
 	}
 
+	var Reflect = _Reflect.Reflect;
 	/**
 	 * Specifies a type of the property.
 	 * The given TypeFunction can return a constructor. A discriminator can be given in the options.
