@@ -1,5 +1,4 @@
-import _Reflect  from 'reflect-metadata';
-const Reflect = _Reflect.Reflect;
+import {Reflect}  from 'reflect-metadata';
 
 import { TypeHelpOptions, TypeOptions } from '..';
 
