@@ -73,6 +73,6 @@
     "typescript": "^4.1.5"
   },
   "dependencies": {
-    "reflect-metadata": "git+https://github.com/ruby232/reflect-metadata.git#master"
+    "reflect-metadata": "^0.1.13"
   }
 }

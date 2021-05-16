@@ -1,3 +1,2 @@
-import _Reflect from 'reflect-metadata';
-const Reflect = _Reflect.Reflect;
+export {};
 //# sourceMappingURL=type-metadata.interface.js.map

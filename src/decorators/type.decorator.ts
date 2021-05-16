@@ -1,4 +1,4 @@
-import {Reflect}  from 'reflect-metadata';
+import 'reflect-metadata';
 
 import { defaultMetadataStorage } from '../storage';
 import { TypeHelpOptions, TypeOptions } from '../interfaces';

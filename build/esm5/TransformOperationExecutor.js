@@ -1,5 +1,4 @@
-import _Reflect from 'reflect-metadata';
-var Reflect = _Reflect.Reflect;
+import 'reflect-metadata';
 import { defaultMetadataStorage } from './storage';
 import { TransformationType } from './enums';
 import { getGlobal, isPromise } from './utils';

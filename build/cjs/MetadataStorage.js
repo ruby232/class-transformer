@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MetadataStorage = void 0;
+require("reflect-metadata");
 const enums_1 = require("./enums");
 /**
  * Storage all library metadata.

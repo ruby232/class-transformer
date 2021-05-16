@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import { MetadataStorage } from './MetadataStorage';
 /**
  * Default metadata storage is used as singleton and can be used to storage all metadatas.

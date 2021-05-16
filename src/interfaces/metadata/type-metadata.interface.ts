@@ -1,5 +1,3 @@
-import {Reflect}  from 'reflect-metadata';
-
 import { TypeHelpOptions, TypeOptions } from '..';
 
 /**

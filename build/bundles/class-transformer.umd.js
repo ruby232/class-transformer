@@ -6,17 +6,22 @@
 
 	var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
-	function getDefaultExportFromCjs (x) {
-		return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
-	}
+	/*! *****************************************************************************
+	Copyright (C) Microsoft. All rights reserved.
+	Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+	this file except in compliance with the License. You may obtain a copy of the
+	License at http://www.apache.org/licenses/LICENSE-2.0
 
-	function createCommonjsModule(fn) {
-	  var module = { exports: {} };
-		return fn(module, module.exports), module.exports;
-	}
+	THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+	KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+	WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+	MERCHANTABLITY OR NON-INFRINGEMENT.
 
-	var _Reflect = createCommonjsModule(function (module, exports) {
-	Object.defineProperty(exports, "__esModule", { value: true });
+	See the Apache Version 2.0 License for specific language governing permissions
+	and limitations under the License.
+	***************************************************************************** */
+
+	var Reflect$1;
 	(function (Reflect) {
 	    // Metadata Proposal
 	    // https://rbuckton.github.io/reflect-metadata/
@@ -1132,11 +1137,7 @@
 	            return obj;
 	        }
 	    });
-	})(exports.Reflect || (exports.Reflect = {}));
-
-	});
-
-	var _Reflect$1 = /*@__PURE__*/getDefaultExportFromCjs(_Reflect);
+	})(Reflect$1 || (Reflect$1 = {}));
 
 	exports.TransformationType = void 0;
 	(function (TransformationType) {
@@ -1393,7 +1394,6 @@
 	    return p !== null && typeof p === 'object' && typeof p.then === 'function';
 	}
 
-	var Reflect = _Reflect$1.Reflect;
 	function instantiateArrayType(arrayType) {
 	    var array = new arrayType();
 	    if (!(array instanceof Set) && !('push' in array)) {
@@ -2058,7 +2058,6 @@
 	    };
 	}
 
-	var Reflect$1 = _Reflect$1.Reflect;
 	/**
 	 * Specifies a type of the property.
 	 * The given TypeFunction can return a constructor. A discriminator can be given in the options.
@@ -2068,7 +2067,7 @@
 	function Type(typeFunction, options) {
 	    if (options === void 0) { options = {}; }
 	    return function (target, propertyName) {
-	        var reflectedType = Reflect$1.getMetadata('design:type', target, propertyName);
+	        var reflectedType = Reflect.getMetadata('design:type', target, propertyName);
 	        defaultMetadataStorage.addTypeMetadata({
 	            target: target.constructor,
 	            propertyName: propertyName,

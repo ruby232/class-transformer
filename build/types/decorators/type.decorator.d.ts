@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import { TypeHelpOptions, TypeOptions } from '../interfaces';
 /**
  * Specifies a type of the property.
