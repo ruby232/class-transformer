@@ -1,3 +1,5 @@
+import { Reflect } from 'reflect-metadata';
+
 import { defaultMetadataStorage } from './storage';
 import { TypeHelpOptions, TypeOptions, ClassTransformOptions, TypeMetadata } from './interfaces';
 import { TransformationType } from './enums';

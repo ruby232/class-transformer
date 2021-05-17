@@ -148,6 +148,10 @@ fetch('users.json').then((users: Object[]) => {
 Now you can use `users[0].getName()` and `users[0].isAdult()` methods.
 
 ## Installation[⬆](#table-of-contents)
+### From github
+
+    `npm install git+https://github.com/ruby232/class-transformer.git#develop --save`
+
 
 ### Node.js[⬆](#table-of-contents)
 

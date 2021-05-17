@@ -1,0 +1,8 @@
+version: "3.2"
+services:
+  app:
+    image: node:10-alpine
+    command: tail -f /etc/hosts
+    working_dir: /var/app
+    volumes:
+      - .:/var/app
