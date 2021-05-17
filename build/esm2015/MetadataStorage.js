@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import { TransformationType } from './enums';
 /**
  * Storage all library metadata.

@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.defaultMetadataStorage = void 0;
+require("reflect-metadata");
 const MetadataStorage_1 = require("./MetadataStorage");
 /**
  * Default metadata storage is used as singleton and can be used to storage all metadatas.
