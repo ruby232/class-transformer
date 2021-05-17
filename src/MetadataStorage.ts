@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import { TypeMetadata, ExposeMetadata, ExcludeMetadata, TransformMetadata } from './interfaces';
 import { TransformationType } from './enums';
 
