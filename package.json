@@ -5,6 +5,9 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "private": true,
+  "main": "./build/package/index.js",
+  "es2015": "./build/es5/src/index.js",
+  "typings": "./build/es5/src/index.d.ts",
   "author": {
     "name": "Umed Khudoiberdiev",
     "email": "pleerock.me@gmail.com"
