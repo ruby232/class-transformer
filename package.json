@@ -24,7 +24,9 @@
     "object-to-class",
     "typescript-serializer"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "reflect-metadata": "git+https://github.com/ruby232/reflect-metadata.git#master"
+  },
   "devDependencies": {
     "@types/moment": "^2.13.0",
     "@types/chai": "^3.4.34",
